@@ -12,7 +12,7 @@ after_success:
   - docker build -t briany2000/multi-client ./client
   - docker build -t briany2000/multi-nginx ./nginx
   - docker build -t briany2000/multi-server ./server
-  - docker build -t briany2000/multi-woker ./worker
+  - docker build -t briany2000/multi-worker ./worker
 
   # log in to the docker CLI
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
